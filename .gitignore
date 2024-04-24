@@ -160,3 +160,9 @@ cython_debug/
 #.idea/
 
 .DS_Store
+
+# added
+magic_mirror_venv/
+
+# to big for Github
+Abgabe_Zwischenstand/Alex/cat_dog_classifier.keras

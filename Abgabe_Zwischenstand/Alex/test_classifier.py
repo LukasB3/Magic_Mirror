@@ -5,15 +5,17 @@ import numpy as np
 
 model = models.load_model('cat_dog_classifier.keras')
 
-path = 'test_image\dog_test.png'
+path = 'cat_keras_prototype.webp'
+
 
 img = cv.imread(path)
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
 
 prediction = model.predict(np.array([img]))
 
-index = np.argmax(prediction)
-
+# print(prediction)
+index = np.round(prediction)
+# print(index)
 
 if index == 0:
     print("Picture is of a Dog")
